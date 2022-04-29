@@ -51,3 +51,18 @@ systemctl status mysqld
   ```ssh
   mysql -u root -p
   ```
+  <img width="744" alt="image" src="https://user-images.githubusercontent.com/68862242/165989475-f08ba9dc-8400-40da-9fd6-ba53ae847ff4.png">
+
+   提示输入密码，首次登陆密码为空，直接回车进入。
+   
+   <img width="744" alt="image" src="https://user-images.githubusercontent.com/68862242/165989683-d5f920e8-d3e6-46a4-a888-169b7611ad3d.png">
+
+  - 更改密码
+   
+   ```ssh
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';
+   ```
+   
+   <img width="744" alt="image" src="https://user-images.githubusercontent.com/68862242/165990157-f109317f-cd1c-4033-b0a0-ac7c16becd04.png">
+
+   <img width="744" alt="image" src="https://user-images.githubusercontent.com/68862242/165990299-b2c08cf7-d1ac-45b2-9f4b-8eedbeb08ff1.png">
