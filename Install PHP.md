@@ -63,7 +63,7 @@ AddType application/x-gzip .gz .tgz
 phpinfo()
 ?>
 ```
-输入网址或域名出现php信息页面
+输入网址或IP地址出现php信息页面
 
 <img width="1129" alt="image" src="https://user-images.githubusercontent.com/68862242/166291062-a86e8126-5d81-4cfc-a5fa-3c33e4a06408.png">
 
