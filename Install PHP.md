@@ -43,3 +43,26 @@ systemctl status php-fpm
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/68862242/166278534-778a8536-5b23-405a-b484-341e5608d6c1.png">
 
+5. 在Apache中设置支持PHP
+
+```ssh
+vim /etc/httpd/conf/httpd.conf
+```
+
+
+找到下面两行代码，并在后面加上AddType application/x-httpd-php .php
+AddType application/x-compress .Z
+AddType application/x-gzip .gz .tgz
+
+
+6. 测试
+在网站根目录下新建index.php文件文件内容如下：
+```php
+<?php
+phpinfo()
+?>
+```
+输入网址或域名出现php信息页面
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/68862242/166291062-a86e8126-5d81-4cfc-a5fa-3c33e4a06408.png">
+
