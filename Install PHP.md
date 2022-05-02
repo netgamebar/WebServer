@@ -51,9 +51,10 @@ vim /etc/httpd/conf/httpd.conf
 
 
 找到下面两行代码，并在后面加上AddType application/x-httpd-php .php
+```
 AddType application/x-compress .Z
 AddType application/x-gzip .gz .tgz
-
+```
 
 6. 测试
 在网站根目录下新建index.php文件文件内容如下：
